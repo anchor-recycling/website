@@ -86,9 +86,14 @@ img {
   justify-content: center;
   width: 58px;
   height: 54px;
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.92);
-  overflow: hidden;
+  padding: 5px;
+  border-radius: 8px;
+  transition: background 180ms ease, box-shadow 180ms ease;
+}
+
+.site-header:not(.is-scrolled):not(.is-open) .brand-logo-wrap {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
 }
 
 .brand-logo {
